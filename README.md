@@ -68,6 +68,7 @@ The environment consisted of six infrastructure and endpoint systems and two wor
 <p align="center">
   <strong>Telemetry Generation → Collection → SIEM → Detection → Investigation → Ticketing → Response</strong>
 </p>
+
 - The environment included:
   - Elastic and Kibana for centralized security monitoring
   - Fleet Server for centralized endpoint management
@@ -78,50 +79,42 @@ The environment consisted of six infrastructure and endpoint systems and two wor
   - A dedicated SOC Analyst workstation for monitoring and investigation.
 - All components were deployed within a dedicated private network using the 192.168.126.0/24 address range.
 
-### 2. Elastic Stack Platform Evaluation
-
+### 2. Elastic Stack Platform Evaluation:
 Reviewed the architecture and responsibilities of the Elastic Stack to understand how its components work together as a SIEM platform.
 
-Elasticsearch
+### a. Elasticsearch:
+- Evaluated Elasticsearch as the centralized search and analytics datastore responsible for storing and querying security telemetry such as:
+  - Windows Event Logs
+  - Sysmon events
+  - Linux authentication logs
+  - Security telemetry
+- Elasticsearch also provides:
+  - ES|QL querying
+  - REST APIs
+  - JSON-based data interaction
+  - Search and analysis capabilities
 
-Evaluated Elasticsearch as the centralized search and analytics datastore responsible for storing and querying security telemetry such as:
+### b. Logstash:
+- Reviewed Logstash as a telemetry processing pipeline capable of:
+  - Collecting data from multiple sources
+  - Filtering events
+  - Parsing fields
+  - Transforming telemetry
+  - Forwarding processed data to Elasticsearch
 
-Windows Event Logs
-Sysmon events
-Linux authentication logs
-Security telemetry
+### c. Kibana:
+- Evaluated Kibana as the primary analyst interface for:
+  - Log investigation
+  - Data exploration through Discover
+  - ES|QL queries
+  - Lens visualizations
+  - Dashboards
+  - Alerting
+  - Reporting
 
-Elasticsearch also provides:
-
-ES|QL querying
-REST APIs
-JSON-based data interaction
-Search and analysis capabilities
-Logstash
-
-Reviewed Logstash as a telemetry processing pipeline capable of:
-
-Collecting data from multiple sources
-Filtering events
-Parsing fields
-Transforming telemetry
-Forwarding processed data to Elasticsearch
-Kibana
-
-Evaluated Kibana as the primary analyst interface for:
-
-Log investigation
-Data exploration through Discover
-ES|QL queries
-Lens visualizations
-Dashboards
-Alerting
-Reporting
-Telemetry Collection
-
-Reviewed the two primary Elastic telemetry collection approaches.
-
-Beats
+### d. Telemetry Collection
+- Reviewed the two primary Elastic telemetry collection approaches.
+#### Beats:
 
 Filebeat — log collection
 Metricbeat — system metrics
