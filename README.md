@@ -4,7 +4,7 @@
 Establish the Elastic Stack as the centralized SIEM foundation for a multi-system Security Operations environment. The objective was to define the environment architecture, deploy and evaluate Elasticsearch and Kibana, and configure the platform with the security, authentication, networking, and operational settings required for effective SOC monitoring.
 
 ## 📊 Project Overview:
-Built a multi-system **Security Operations environment** using **VMware Workstation** to support security monitoring, endpoint monitoring, incident management, and controlled security testing. The environment used the **Elastic Stack** as the central security monitoring platform, with **Elasticsearch** used to collect, store, and search security information, and **Kibana** providing the main interface for monitoring, investigation, and dashboards. The project included installing and configuring Elasticsearch and Kibana, setting up network connectivity, managing user access and security credentials, and applying secure platform settings.
+Built a multi-system Security Operations environment using VMware Workstation to support security monitoring, endpoint monitoring, incident management, and controlled security testing. The environment used the Elastic Stack as the central security monitoring platform, with Elasticsearch used to collect, store, and search security information, and Kibana providing the main interface for monitoring, investigation, and dashboards. The project included installing and configuring Elasticsearch and Kibana, setting up network connectivity, managing user access and security credentials, and applying secure platform settings.
 
 ## 🏗️ Environment Architecture:
 
