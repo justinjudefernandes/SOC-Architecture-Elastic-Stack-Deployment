@@ -1,4 +1,4 @@
-# SOC Architecture & Elastic Stack Deployment
+<img width="975" height="547" alt="image" src="https://github.com/user-attachments/assets/df5d0e6e-4dde-402a-86c2-c28d49437e49" /># SOC Architecture & Elastic Stack Deployment
 
 ## 🎯 Objective:
 Establish the Elastic Stack as the centralized SIEM foundation for a multi-system Security Operations environment. The objective was to define the environment architecture, deploy and evaluate Elasticsearch and Kibana, and configure the platform with the security, authentication, networking, and operational settings required for effective SOC monitoring.
@@ -10,7 +10,7 @@ Built a multi-system Security Operations environment using VMware Workstation to
 
 📌 Refer to the below screenshot:
 
-<img width="873" height="700" alt="image" src="https://github.com/user-attachments/assets/9db6d560-66db-42bb-bb06-9cf045d51661" />
+<img width="785" height="450" alt="image" src="https://github.com/user-attachments/assets/9db6d560-66db-42bb-bb06-9cf045d51661" />
 
 The environment consisted of six infrastructure and endpoint systems and two workstations:
 - Elastic & Kibana Server — centralized SIEM and log analytics platform
@@ -140,9 +140,16 @@ The evaluation demonstrated that the **Elastic Stack can provide a centralized p
 - Started the Elasticsearch service and verified that it was running successfully.
 - Performed basic service management and operational checks to ensure the platform was ready for use.
 
-📌 [Insert: Elasticsearch Installation Screenshot]
+📌 Refer to the below screenshots: (left to right)
 
-📌 [Insert: Elasticsearch Service Status Screenshot]
+<img width="390" height="230" alt="image" src="https://github.com/user-attachments/assets/4c3e59e4-15c3-4f3a-9df4-eb2172944986" />
+<img width="390" height="230" alt="image" src="https://github.com/user-attachments/assets/763f79d4-1b7d-459c-ba40-d75ce97bdf97" />
+<img width="390" height="230" alt="image" src="https://github.com/user-attachments/assets/824273bf-8764-46e2-9f13-c9b06ef3389a" />
+<img width="390" height="230" alt="image" src="https://github.com/user-attachments/assets/4447eeaf-0684-4226-a83f-e7c70388c70e" />
+<img width="390" height="230" alt="image" src="https://github.com/user-attachments/assets/a6139671-41ae-4eca-879f-43f2a191ff29" />
+<img width="390" height="230" alt="image" src="https://github.com/user-attachments/assets/f6f1ed5a-be05-4d6e-8948-4fba4d4a21d3" />
+<img width="390" height="230" alt="image" src="https://github.com/user-attachments/assets/8c61cd07-1c0b-4298-9e83-5313daf6c124" />
+<img width="390" height="230" alt="image" src="https://github.com/user-attachments/assets/27e73605-a63f-4bfc-9b71-0dc1590e8a96" />
 
 4. Kibana Deployment & Elasticsearch Enrollment
 
