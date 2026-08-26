@@ -1,7 +1,7 @@
 # SOC Architecture & Elastic Stack Deployment
 
 ## 🎯 Objective:
-Design and deploy a multi-system Security Operations environment and establish the Elastic Stack as the centralized SIEM platform. This included designing the environment architecture, evaluating the Elastic Stack's core components, deploying Elasticsearch and Kibana, and configuring the platform for secure operational use.
+Establish the Elastic Stack as the centralized SIEM foundation for a multi-system Security Operations environment. The objective was to define the environment architecture, deploy and evaluate Elasticsearch and Kibana, and configure the platform with the security, authentication, networking, and operational settings required for effective SOC monitoring.
 
 ## 📊 Project Overview:
 Designed and provisioned a multi-system Security Operations environment in VMware Workstation to support security monitoring, endpoint telemetry, centralized management, incident ticketing, and adversary simulation.
@@ -12,88 +12,69 @@ The deployment included Elasticsearch and Kibana installation, network configura
 
 ## 🏗️ Environment Architecture
 
-📌 [Insert: Logical Architecture Diagram]
+📌 Refer to the below screenshot:
+
+<img width="873" height="700" alt="image" src="https://github.com/user-attachments/assets/9db6d560-66db-42bb-bb06-9cf045d51661" />
 
 The environment consisted of six infrastructure and endpoint systems and two workstations:
-
-Elastic & Kibana Server — centralized SIEM and log analytics platform
-Fleet Server — centralized Elastic Agent management
-osTicket Server — incident ticketing and case management
-Windows Server — RDP-enabled monitored endpoint
-Ubuntu Server — SSH-enabled monitored endpoint
-Mythic C2 Server — adversary simulation and C2 infrastructure
-SOC Analyst Workstation — analyst access to security platforms
-Kali Linux Workstation — attack simulation and telemetry generation
-
-### Network Configuration:
-
-| Configuration | Value |
-|---|---|
-| Network | `192.168.126.0/24` |
-| Gateway | `192.168.126.2` |
-| Subnet Mask | `255.255.255.0` |
-| Hypervisor | VMware Workstation |
-
-📌 [Insert: VMware Environment Overview Screenshot]
+- Elastic & Kibana Server — centralized SIEM and log analytics platform
+- Fleet Server — centralized Elastic Agent management
+- osTicket Server — incident ticketing and case management
+- Windows Server — RDP-enabled monitored endpoint
+- Ubuntu Server — SSH-enabled monitored endpoint
+- Mythic C2 Server — adversary simulation and C2 infrastructure
+- SOC Analyst Workstation — analyst access to security platforms
+- Kali Linux Workstation — attack simulation and telemetry generation
 
 ## 🧰 Tools & Technologies:
-VMware Workstation Pro
-draw.io / diagrams.net
-Ubuntu Server 22.04 LTS
-Elasticsearch
-Kibana
-Fleet Server
-Elastic Agent
-Windows Server
-osTicket
-Mythic C2 Framework
-Kali Linux
+- VMware Workstation Pro
+- draw.io / diagrams.net
+- Ubuntu Server 22.04 LTS
+- Elasticsearch
+- Kibana
+- Fleet Server
+- Elastic Agent
+- Windows Server
+- osTicket
+- Mythic C2 Framework
+- Kali Linux
 
 ## 🛠️ Capabilities Demonstrated:
-Security Operations architecture and network design
-SIEM platform evaluation and architecture mapping
-Linux server provisioning and administration
-Elasticsearch deployment and service administration
-Kibana deployment and Elasticsearch enrollment
-Elastic Stack component and telemetry architecture
-Network service configuration
-Authentication and credential management
-Kibana encryption-key and keystore configuration
-Technical documentation and infrastructure visualization
+- Security Operations architecture and network design
+- SIEM platform evaluation and architecture mapping
+- Linux server provisioning and administration
+- Elasticsearch deployment and service administration
+- Kibana deployment and Elasticsearch enrollment
+- Elastic Stack component and telemetry architecture
+- Network service configuration
+- Authentication and credential management
+- Kibana encryption-key and keystore configuration
+- Technical documentation and infrastructure visualization
 
 ## 📁 Key Deliverables:
-Logical Security Operations architecture diagram
-VMware-based Security Operations environment
-Segmented private network
-Operational Elasticsearch instance
-Operational Kibana instance enrolled with Elasticsearch
-Configured Elasticsearch and Kibana network services
-Verified Kibana administrative access
-Persistent Kibana encryption keys configured through the keystore
-Documented Elastic Stack architecture and SIEM component mapping
+- Logical Security Operations architecture diagram
+- VMware-based Security Operations environment
+- Segmented private network
+- Operational Elasticsearch instance
+- Operational Kibana instance enrolled with Elasticsearch
+- Configured Elasticsearch and Kibana network services
+- Verified Kibana administrative access
+- Persistent Kibana encryption keys configured through the keystore
+- Documented Elastic Stack architecture and SIEM component mapping
 
 ## 🔍 Implementation:
-1. Environment Architecture & Design
-
-Designed the Security Operations environment architecture using draw.io and deployed the infrastructure locally using VMware Workstation.
-
-The architecture was designed to support the complete security monitoring workflow:
-
-Telemetry Generation → Collection → SIEM → Detection → Investigation → Ticketing → Response
-
-The environment included:
-
-Elastic & Kibana for centralized security monitoring
-Fleet Server for centralized endpoint management
-Windows and Ubuntu endpoints for telemetry generation
-osTicket for incident and case management
-Mythic C2 for controlled adversary simulation
-Kali Linux for attack simulation
-SOC Analyst workstation for monitoring and investigation
-
-The environment was deployed on a dedicated private network:
-
-192.168.126.0/24
+### 1. Environment Architecture & Design:
+- The Security Operations environment architecture was designed using draw.io and deployed locally using VMware Workstation to support the complete security monitoring workflow:
+               ```Telemetry Generation → Collection → SIEM → Detection → Investigation → Ticketing → Response```
+- The environment included:
+  - Elastic and Kibana for centralized security monitoring
+  - Fleet Server for centralized endpoint management
+  - Windows and Ubuntu endpoints for telemetry generation
+  - osTicket for incident and case management
+  - Mythic C2 for controlled adversary simulation
+  - Kali Linux for attack simulation
+  - A dedicated SOC Analyst workstation for monitoring and investigation.
+- All components were deployed within a dedicated private network using the 192.168.126.0/24 address range.
 
 📌 [Insert: Logical Architecture Diagram]
 
@@ -167,6 +148,7 @@ Search and investigation capabilities
 Security visualizations
 Scalability
 Broad integration ecosystem
+
 3. Elasticsearch Deployment & Configuration
 
 Provisioned a dedicated Ubuntu Server 22.04 virtual machine to host Elasticsearch.
