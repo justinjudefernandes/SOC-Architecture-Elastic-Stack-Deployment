@@ -79,87 +79,67 @@ The environment consisted of six infrastructure and endpoint systems and two wor
   - A dedicated SOC Analyst workstation for monitoring and investigation.
 - All components were deployed within a dedicated private network using the 192.168.126.0/24 address range.
 
-### 2. Elastic Stack Platform Evaluation:
-Reviewed the architecture and responsibilities of the Elastic Stack to understand how its components work together as a SIEM platform.
+### 2. Elastic Stack Platform Evaluation
 
-### a. Elasticsearch:
-- Evaluated Elasticsearch as the centralized search and analytics datastore responsible for storing and querying security telemetry such as:
+Reviewed the main components of the **Elastic Stack** to understand how they work together to provide a centralized security monitoring and analysis platform.
+
+#### a. Elasticsearch
+- Evaluated **Elasticsearch** as the central system for storing, searching, and analyzing security data.
+- Security data can include:
   - Windows Event Logs
   - Sysmon events
   - Linux authentication logs
-  - Security telemetry
-- Elasticsearch also provides:
-  - ES|QL querying
-  - REST APIs
-  - JSON-based data interaction
-  - Search and analysis capabilities
+  - Other security-related activity
+- Reviewed its search, analysis, and API capabilities for investigating security events.
 
-### b. Logstash:
-- Reviewed Logstash as a telemetry processing pipeline capable of:
-  - Collecting data from multiple sources
-  - Filtering events
-  - Parsing fields
-  - Transforming telemetry
-  - Forwarding processed data to Elasticsearch
+#### b. Logstash
+- Reviewed **Logstash** as the data processing component.
+- It can collect information from different sources, clean and organize the data, and send it to Elasticsearch for analysis.
 
-### c. Kibana:
-- Evaluated Kibana as the primary analyst interface for:
-  - Log investigation
-  - Data exploration through Discover
-  - ES|QL queries
-  - Lens visualizations
-  - Dashboards
-  - Alerting
-  - Reporting
+#### c. Kibana
+- Evaluated **Kibana** as the main interface used by security analysts.
+- It supports:
+  - Investigating security events
+  - Searching and exploring data
+  - Creating visualizations and dashboards
+  - Running queries
+  - Monitoring alerts
+  - Generating reports
 
-### d. Telemetry Collection
-- Reviewed the two primary Elastic telemetry collection approaches.
-#### Beats:
+#### d. Telemetry Collection
+- Reviewed the main methods used to collect security and system information.
 
-Filebeat — log collection
-Metricbeat — system metrics
-Packetbeat — network telemetry
-Winlogbeat — Windows Event Logs
-Auditbeat — audit data
-Heartbeat — uptime monitoring
+##### i. Beats
+- **Filebeat** — Collects log files
+- **Metricbeat** — Collects system performance information
+- **Packetbeat** — Collects network activity
+- **Winlogbeat** — Collects Windows Event Logs
+- **Auditbeat** — Collects security and audit information
+- **Heartbeat** — Monitors system and service availability
 
-Elastic Agent
+##### ii. Elastic Agent
+- Reviewed **Elastic Agent** as a centralized solution for collecting endpoint security and system information.
+- Fleet can be used to centrally manage Elastic Agents across multiple endpoints.
 
-Centralized endpoint telemetry and management through Fleet
-Elastic vs. Traditional SIEM Architecture
-Elastic Stack	Equivalent SIEM Function
-Elasticsearch	Indexer / Search & Analytics
-Logstash	Heavy Forwarder / Processing Pipeline
-Kibana	Web / Analyst Interface
-Beats / Elastic Agent	Data Collection / Forwarders
+### Elastic vs. Traditional SIEM Architecture
 
-The evaluation highlighted several benefits of the Elastic platform:
+| Elastic Stack | Equivalent SIEM Function |
+|---|---|
+| Elasticsearch | Data Storage, Search & Analytics |
+| Logstash | Data Processing & Collection |
+| Kibana | Analyst / Security Operations Interface |
+| Beats / Elastic Agent | Data Collection / Forwarders |
 
-Centralized logging
-Flexible telemetry ingestion
-Search and investigation capabilities
-Security visualizations
-Scalability
-Broad integration ecosystem
+The evaluation demonstrated that the **Elastic Stack can provide a centralized platform for collecting, storing, searching, visualizing, and investigating security data**, while also supporting scalability and integration with a wide range of security technologies.
 
-3. Elasticsearch Deployment & Configuration
-
-Provisioned a dedicated Ubuntu Server 22.04 virtual machine to host Elasticsearch.
-
-Configuration Performed
-Installed Elasticsearch
-Secured the generated security auto-configuration credentials
-Modified elasticsearch.yml
-Configured network.host
-Enabled HTTP port 9200
-Enabled Elasticsearch to start automatically
-Started the Elasticsearch service
-Verified service status using systemctl
-Service Management
-systemctl daemon-reload
-systemctl enable elasticsearch.service
-systemctl start elasticsearch.service
-systemctl status elasticsearch.service
+### 3. Elasticsearch Deployment & Configuration
+- Set up a dedicated Ubuntu Server to host Elasticsearch, the core component responsible for storing and processing security data.
+- Installed and configured Elasticsearch for secure operation.
+- Configured the server's network settings and enabled communication through the required port.
+- Secured the automatically generated security credentials.
+- Configured Elasticsearch to start automatically when the server is restarted.
+- Started the Elasticsearch service and verified that it was running successfully.
+- Performed basic service management and operational checks to ensure the platform was ready for use.
 
 📌 [Insert: Elasticsearch Installation Screenshot]
 
