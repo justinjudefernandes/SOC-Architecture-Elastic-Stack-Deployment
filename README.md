@@ -208,12 +208,3 @@ This ensured that Kibana's encryption keys were **securely stored and retained a
 <img width="390" height="230" alt="image" src="https://github.com/user-attachments/assets/3db76325-9f1f-49ee-9b12-835af4e0d0ed" />
 <img width="390" height="230" alt="image" src="https://github.com/user-attachments/assets/3951151c-3e4f-415e-bb0d-3395a66106aa" />
 <img width="785" height="230" alt="image" src="https://github.com/user-attachments/assets/914ceb6a-b7e0-4b7f-88a2-39fbbe64eaa0" />
-
-
-📌 Outcome
-
-Successfully established the foundation of the Security Operations environment by:
-
-Architecting the environment → Deploying Elasticsearch → Deploying Kibana → Enrolling the platform → Configuring security keys
-
-This Elastic environment subsequently served as the centralized SIEM platform for the remainder of the 30-Day MyDFIR challenge, where Windows and Linux telemetry, Sysmon events, authentication activity, C2 telemetry, detection rules, dashboards, automated alerting, and EDR events were investigated and analyzed.
