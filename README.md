@@ -10,7 +10,7 @@ The environment was built around the Elastic Stack, with Elasticsearch providing
 
 The deployment included Elasticsearch and Kibana installation, network configuration, platform enrollment, administrative authentication, and persistent encryption-key configuration through the Kibana keystore.
 
-## 🏗️ Environment Architecture
+## 🏗️ Environment Architecture:
 
 📌 Refer to the below screenshot:
 
@@ -63,23 +63,26 @@ The environment consisted of six infrastructure and endpoint systems and two wor
 - Documented Elastic Stack architecture and SIEM component mapping
 
 ## 🔍 Implementation:
-### 1. Environment Architecture & Design:
-- The Security Operations environment architecture was designed using draw.io and deployed locally using VMware Workstation to support the complete security monitoring workflow: <br>
+### 1. Environment Architecture & Design
+
+- Designed the Security Operations environment architecture using **draw.io** and deployed the infrastructure locally using **VMware Workstation**.
+- The environment was structured to support the complete security monitoring workflow:
+
 <p align="center">
   <strong>Telemetry Generation → Collection → SIEM → Detection → Investigation → Ticketing → Response</strong>
 </p>
 
 - The environment included:
-  - Elastic and Kibana for centralized security monitoring
-  - Fleet Server for centralized endpoint management
-  - Windows and Ubuntu endpoints for telemetry generation
-  - osTicket for incident and case management
-  - Mythic C2 for controlled adversary simulation
-  - Kali Linux for attack simulation
-  - A dedicated SOC Analyst workstation for monitoring and investigation.
-- All components were deployed within a dedicated private network using the 192.168.126.0/24 address range.
+  - **Elastic and Kibana** — Centralized security monitoring and analysis
+  - **Fleet Server** — Centralized endpoint management
+  - **Windows and Ubuntu endpoints** — Security and system telemetry generation
+  - **osTicket** — Incident and case management
+  - **Mythic C2** — Controlled adversary simulation
+  - **Kali Linux** — Attack and security testing
+  - **SOC Analyst workstation** — Security monitoring and investigation
+- All components were deployed within a dedicated private network using the **192.168.126.0/24** address range.
 
-### 2. Elastic Stack Platform Evaluation
+### 2. Elastic Stack Platform Evaluation:
 
 Reviewed the main components of the **Elastic Stack** to understand how they work together to provide a centralized security monitoring and analysis platform.
 
