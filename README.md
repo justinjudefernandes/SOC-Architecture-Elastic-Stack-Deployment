@@ -10,7 +10,7 @@ Built a multi-system Security Operations environment using VMware Workstation to
 
 📌 Refer to the below screenshot:
 
-<img width="785" height="450" alt="image" src="https://github.com/user-attachments/assets/9db6d560-66db-42bb-bb06-9cf045d51661" />
+<img width="550" height="450" alt="image" src="https://github.com/user-attachments/assets/9db6d560-66db-42bb-bb06-9cf045d51661" /> <br>
 
 The environment consisted of six infrastructure and endpoint systems and two workstations:
 - Elastic & Kibana Server — centralized SIEM and log analytics platform
