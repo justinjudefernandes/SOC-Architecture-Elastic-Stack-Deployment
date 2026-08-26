@@ -151,45 +151,66 @@ The evaluation demonstrated that the **Elastic Stack can provide a centralized p
 <img width="390" height="230" alt="image" src="https://github.com/user-attachments/assets/8c61cd07-1c0b-4298-9e83-5313daf6c124" />
 <img width="390" height="230" alt="image" src="https://github.com/user-attachments/assets/27e73605-a63f-4bfc-9b71-0dc1590e8a96" />
 
-4. Kibana Deployment & Elasticsearch Enrollment
+### 4. Kibana Deployment & Elasticsearch Enrollment:
 
-Installed Kibana on the Elastic server and configured it to communicate with Elasticsearch.
+Installed **Kibana** on the Elastic server and connected it to **Elasticsearch** to provide a user-friendly interface for security monitoring and investigation.
 
-Configuration Performed
-Modified kibana.yml
-Configured server.host
-Configured HTTP port 5601
-Enabled Kibana as a system service
-Started and verified the Kibana service
-Generated an Elasticsearch enrollment token
-Enrolled Kibana with Elasticsearch
-Completed Kibana verification
-Authenticated using the elastic administrative account
-Service Management
+#### Configuration Performed:
+
+- Installed and configured **Kibana**
+- Configured the server network settings and **HTTP port 5601**
+- Enabled Kibana to start automatically with the server
+- Started and verified that the Kibana service was running successfully
+- Connected Kibana to **Elasticsearch** using a secure enrollment process
+- Verified that Kibana was communicating correctly with Elasticsearch
+- Confirmed administrative access using the **elastic** account
+
+#### Service Management:
+
+```bash
 systemctl daemon-reload
 systemctl enable kibana.service
 systemctl start kibana.service
 systemctl status kibana.service
 
-📌 [Insert: Kibana Configuration Screenshot]
+📌 Refer to the below screenshots: (left to right)
 
-📌 [Insert: Kibana Enrollment Screenshot]
+<img width="390" height="230" alt="image" src="https://github.com/user-attachments/assets/e74b12d5-dbee-4cd5-a04d-450ac495fb77" />
+<img width="390" height="230" alt="image" src="https://github.com/user-attachments/assets/74552d27-5446-4a04-aebe-d3cf764fa5c4" />
+<img width="390" height="230" alt="image" src="https://github.com/user-attachments/assets/665a363b-7b23-4d75-8adc-392248497a67" />
+<img width="390" height="230" alt="image" src="https://github.com/user-attachments/assets/6a403c3b-3e38-4e14-ab73-03ef19a0efd9" />
+<img width="785" height="230" alt="image" src="https://github.com/user-attachments/assets/1675b48d-9f96-44f8-baee-9ae025e48d80" />
 
-📌 [Insert: Kibana Dashboard Screenshot]
+### 5. Kibana Security & Encryption Configuration:
+Configured **Kibana's security settings** to protect sensitive information and ensure that encryption keys remain available after system restarts.
 
-5. Kibana Security Configuration
+#### Configuration Performed:
+- Created secure, persistent encryption keys for Kibana
+- Stored the keys securely in the **Kibana keystore**
+- Enabled encryption for Kibana's protected information
+- Restarted Kibana to apply the security configuration
+- Verified that the encryption settings remained active after the restart
 
-Configured persistent Kibana encryption keys using the Kibana keystore.
+This ensured that Kibana's encryption keys were **securely stored and retained across service restarts**, providing consistent protection for sensitive data.
 
-Configuration Performed
-Generated persistent Kibana encryption keys
-Added the required keys to the Kibana keystore
-Configured encryption for Kibana's protected data
-Restarted Kibana to apply the configuration
+📌 Refer to the below screenshots: (left to right)
 
-This ensured that the required encryption keys persisted across Kibana service restarts rather than being regenerated.
+<img width="390" height="230" alt="image" src="https://github.com/user-attachments/assets/3c15ad27-14eb-437a-b340-fa12cff08813" />
+<img width="390" height="230" alt="image" src="https://github.com/user-attachments/assets/13646545-d79d-4337-8a38-8b5305070183" />
+<img width="390" height="230" alt="image" src="https://github.com/user-attachments/assets/6fa5d2fb-046a-4196-98c4-41f0acb8bc6f" />
+<img width="390" height="230" alt="image" src="https://github.com/user-attachments/assets/a571ba15-3830-4f7e-a49a-b298d8716c9b" />
+<img width="390" height="230" alt="image" src="https://github.com/user-attachments/assets/64a3baf1-9cda-4b68-989a-a096cac886e0" />
+<img width="390" height="230" alt="image" src="https://github.com/user-attachments/assets/67e76d84-5d39-42fe-a089-9446de5a76a5" />
+<img width="390" height="230" alt="image" src="https://github.com/user-attachments/assets/c968c5be-8e1a-4ff6-988e-29491916149f" />
+<img width="390" height="230" alt="image" src="https://github.com/user-attachments/assets/4ca58748-0886-4825-b646-a32a0740ac93" />
+<img width="390" height="230" alt="image" src="https://github.com/user-attachments/assets/74add54f-2f2f-490f-af17-3da008563349" />
+<img width="390" height="230" alt="image" src="https://github.com/user-attachments/assets/8e4ad444-7713-4521-b15e-94b19c711fd5" />
+<img width="390" height="230" alt="image" src="https://github.com/user-attachments/assets/321d6f74-261b-4033-ab51-07573c5bb537" />
+<img width="390" height="230" alt="image" src="https://github.com/user-attachments/assets/5313858e-4579-442d-80fb-2a86ea38ad71" />
+<img width="390" height="230" alt="image" src="https://github.com/user-attachments/assets/3db76325-9f1f-49ee-9b12-835af4e0d0ed" />
+<img width="390" height="230" alt="image" src="https://github.com/user-attachments/assets/3951151c-3e4f-415e-bb0d-3395a66106aa" />
+<img width="785" height="230" alt="image" src="https://github.com/user-attachments/assets/914ceb6a-b7e0-4b7f-88a2-39fbbe64eaa0" />
 
-📌 [Insert: Kibana Keystore Configuration Screenshot]
 
 📌 Outcome
 
