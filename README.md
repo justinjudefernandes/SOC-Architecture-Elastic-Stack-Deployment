@@ -1,4 +1,4 @@
-<img width="975" height="547" alt="image" src="https://github.com/user-attachments/assets/df5d0e6e-4dde-402a-86c2-c28d49437e49" /># SOC Architecture & Elastic Stack Deployment
+# SOC Architecture & Elastic Stack Deployment
 
 ## 🎯 Objective:
 Establish the Elastic Stack as the centralized SIEM foundation for a multi-system Security Operations environment. The objective was to define the environment architecture, deploy and evaluate Elasticsearch and Kibana, and configure the platform with the security, authentication, networking, and operational settings required for effective SOC monitoring.
