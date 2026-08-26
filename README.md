@@ -4,11 +4,7 @@
 Establish the Elastic Stack as the centralized SIEM foundation for a multi-system Security Operations environment. The objective was to define the environment architecture, deploy and evaluate Elasticsearch and Kibana, and configure the platform with the security, authentication, networking, and operational settings required for effective SOC monitoring.
 
 ## 📊 Project Overview:
-Designed and provisioned a multi-system Security Operations environment in VMware Workstation to support security monitoring, endpoint telemetry, centralized management, incident ticketing, and adversary simulation.
-
-The environment was built around the Elastic Stack, with Elasticsearch providing centralized data storage and search capabilities and Kibana serving as the primary analyst interface for querying, visualization, and security operations.
-
-The deployment included Elasticsearch and Kibana installation, network configuration, platform enrollment, administrative authentication, and persistent encryption-key configuration through the Kibana keystore.
+Built a multi-system **Security Operations environment** using **VMware Workstation** to support security monitoring, endpoint monitoring, incident management, and controlled security testing. The environment used the **Elastic Stack** as the central security monitoring platform, with **Elasticsearch** used to collect, store, and search security information, and **Kibana** providing the main interface for monitoring, investigation, and dashboards. The project included installing and configuring Elasticsearch and Kibana, setting up network connectivity, managing user access and security credentials, and applying secure platform settings.
 
 ## 🏗️ Environment Architecture:
 
@@ -63,7 +59,7 @@ The environment consisted of six infrastructure and endpoint systems and two wor
 - Documented Elastic Stack architecture and SIEM component mapping
 
 ## 🔍 Implementation:
-### 1. Environment Architecture & Design
+### 1. Environment Architecture & Design:
 
 - Designed the Security Operations environment architecture using **draw.io** and deployed the infrastructure locally using **VMware Workstation**.
 - The environment was structured to support the complete security monitoring workflow:
