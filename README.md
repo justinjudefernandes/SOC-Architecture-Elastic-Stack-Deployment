@@ -164,12 +164,12 @@ Installed **Kibana** on the Elastic server and connected it to **Elasticsearch**
 - Confirmed administrative access using the **elastic** account
 
 #### Service Management:
-
-```bash
+```
 systemctl daemon-reload
 systemctl enable kibana.service
 systemctl start kibana.service
 systemctl status kibana.service
+```
 
 📌 Refer to the below screenshots: (left to right)
 
