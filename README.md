@@ -64,8 +64,10 @@ The environment consisted of six infrastructure and endpoint systems and two wor
 
 ## 🔍 Implementation:
 ### 1. Environment Architecture & Design:
-- The Security Operations environment architecture was designed using draw.io and deployed locally using VMware Workstation to support the complete security monitoring workflow:
-               ```Telemetry Generation → Collection → SIEM → Detection → Investigation → Ticketing → Response```
+- The Security Operations environment architecture was designed using draw.io and deployed locally using VMware Workstation to support the complete security monitoring workflow: <br>
+<p align="center">
+  <strong>Telemetry Generation → Collection → SIEM → Detection → Investigation → Ticketing → Response</strong>
+</p>
 - The environment included:
   - Elastic and Kibana for centralized security monitoring
   - Fleet Server for centralized endpoint management
@@ -76,9 +78,7 @@ The environment consisted of six infrastructure and endpoint systems and two wor
   - A dedicated SOC Analyst workstation for monitoring and investigation.
 - All components were deployed within a dedicated private network using the 192.168.126.0/24 address range.
 
-📌 [Insert: Logical Architecture Diagram]
-
-2. Elastic Stack Platform Evaluation
+### 2. Elastic Stack Platform Evaluation
 
 Reviewed the architecture and responsibilities of the Elastic Stack to understand how its components work together as a SIEM platform.
 
