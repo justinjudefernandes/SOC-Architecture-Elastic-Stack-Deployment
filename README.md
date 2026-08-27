@@ -57,8 +57,7 @@ The environment consisted of six infrastructure and endpoint systems and two wor
 - Documented Elastic Stack architecture and SIEM component mapping
 
 ## 🔍 Implementation:
-### 1. Environment Architecture & Design:
-
+### 1. Environment Architecture & Design
 - Designed the Security Operations environment architecture using **draw.io** and deployed the infrastructure locally using **VMware Workstation**.
 - The environment was structured to support the complete security monitoring workflow:
 
@@ -76,8 +75,7 @@ The environment consisted of six infrastructure and endpoint systems and two wor
   - **SOC Analyst workstation** — Security monitoring and investigation
 - All components were deployed within a dedicated private network using the **192.168.126.0/24** address range.
 
-### 2. Elastic Stack Platform Evaluation:
-
+### 2. Elastic Stack Platform Evaluation
 Reviewed the main components of the **Elastic Stack** to understand how they work together to provide a centralized security monitoring and analysis platform.
 
 #### a. Elasticsearch
@@ -150,7 +148,6 @@ The evaluation demonstrated that the **Elastic Stack can provide a centralized p
 <img width="390" height="230" alt="image" src="https://github.com/user-attachments/assets/27e73605-a63f-4bfc-9b71-0dc1590e8a96" />
 
 ### 4. Kibana Deployment & Elasticsearch Enrollment:
-
 Installed **Kibana** on the Elastic server and connected it to **Elasticsearch** to provide a user-friendly interface for security monitoring and investigation.
 
 #### Configuration Performed:
