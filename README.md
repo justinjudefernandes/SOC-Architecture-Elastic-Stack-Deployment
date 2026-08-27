@@ -138,14 +138,14 @@ The evaluation demonstrated that the **Elastic Stack can provide a centralized p
 
 📌 Refer to the below screenshots: (left to right)
 
-<img width="390" height="230" alt="image" src="https://github.com/user-attachments/assets/4c3e59e4-15c3-4f3a-9df4-eb2172944986" />
-<img width="390" height="230" alt="image" src="https://github.com/user-attachments/assets/763f79d4-1b7d-459c-ba40-d75ce97bdf97" />
-<img width="390" height="230" alt="image" src="https://github.com/user-attachments/assets/824273bf-8764-46e2-9f13-c9b06ef3389a" />
-<img width="390" height="230" alt="image" src="https://github.com/user-attachments/assets/4447eeaf-0684-4226-a83f-e7c70388c70e" />
-<img width="390" height="230" alt="image" src="https://github.com/user-attachments/assets/a6139671-41ae-4eca-879f-43f2a191ff29" />
-<img width="390" height="230" alt="image" src="https://github.com/user-attachments/assets/f6f1ed5a-be05-4d6e-8948-4fba4d4a21d3" />
-<img width="390" height="230" alt="image" src="https://github.com/user-attachments/assets/8c61cd07-1c0b-4298-9e83-5313daf6c124" />
-<img width="390" height="230" alt="image" src="https://github.com/user-attachments/assets/27e73605-a63f-4bfc-9b71-0dc1590e8a96" />
+<img width="393" height="230" alt="image" src="https://github.com/user-attachments/assets/4c3e59e4-15c3-4f3a-9df4-eb2172944986" />
+<img width="393" height="230" alt="image" src="https://github.com/user-attachments/assets/763f79d4-1b7d-459c-ba40-d75ce97bdf97" />
+<img width="393" height="230" alt="image" src="https://github.com/user-attachments/assets/824273bf-8764-46e2-9f13-c9b06ef3389a" />
+<img width="393" height="230" alt="image" src="https://github.com/user-attachments/assets/4447eeaf-0684-4226-a83f-e7c70388c70e" />
+<img width="393" height="230" alt="image" src="https://github.com/user-attachments/assets/a6139671-41ae-4eca-879f-43f2a191ff29" />
+<img width="393" height="230" alt="image" src="https://github.com/user-attachments/assets/f6f1ed5a-be05-4d6e-8948-4fba4d4a21d3" />
+<img width="393" height="230" alt="image" src="https://github.com/user-attachments/assets/8c61cd07-1c0b-4298-9e83-5313daf6c124" />
+<img width="393" height="230" alt="image" src="https://github.com/user-attachments/assets/27e73605-a63f-4bfc-9b71-0dc1590e8a96" />
 
 ### 4. Kibana Deployment & Elasticsearch Enrollment:
 Installed **Kibana** on the Elastic server and connected it to **Elasticsearch** to provide a user-friendly interface for security monitoring and investigation.
@@ -170,11 +170,11 @@ systemctl status kibana.service
 
 📌 Refer to the below screenshots: (left to right)
 
-<img width="390" height="230" alt="image" src="https://github.com/user-attachments/assets/e74b12d5-dbee-4cd5-a04d-450ac495fb77" />
-<img width="390" height="230" alt="image" src="https://github.com/user-attachments/assets/74552d27-5446-4a04-aebe-d3cf764fa5c4" />
-<img width="390" height="230" alt="image" src="https://github.com/user-attachments/assets/665a363b-7b23-4d75-8adc-392248497a67" />
-<img width="390" height="230" alt="image" src="https://github.com/user-attachments/assets/6a403c3b-3e38-4e14-ab73-03ef19a0efd9" />
-<img width="785" height="230" alt="image" src="https://github.com/user-attachments/assets/1675b48d-9f96-44f8-baee-9ae025e48d80" />
+<img width="393" height="230" alt="image" src="https://github.com/user-attachments/assets/e74b12d5-dbee-4cd5-a04d-450ac495fb77" />
+<img width="393" height="230" alt="image" src="https://github.com/user-attachments/assets/74552d27-5446-4a04-aebe-d3cf764fa5c4" />
+<img width="393" height="230" alt="image" src="https://github.com/user-attachments/assets/665a363b-7b23-4d75-8adc-392248497a67" />
+<img width="393" height="230" alt="image" src="https://github.com/user-attachments/assets/6a403c3b-3e38-4e14-ab73-03ef19a0efd9" />
+<img width="790" height="230" alt="image" src="https://github.com/user-attachments/assets/1675b48d-9f96-44f8-baee-9ae025e48d80" />
 
 ### 5. Kibana Security & Encryption Configuration:
 Configured **Kibana's security settings** to protect sensitive information and ensure that encryption keys remain available after system restarts.
