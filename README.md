@@ -57,7 +57,7 @@ The environment consisted of six infrastructure and endpoint systems and two wor
 - Documented Elastic Stack architecture and SIEM component mapping
 
 ## 🔍 Implementation:
-### 1. Environment Architecture & Design
+### 1. Environment Architecture & Design:
 - Designed the Security Operations environment architecture using **draw.io** and deployed the infrastructure locally using **VMware Workstation**.
 - The environment was structured to support the complete security monitoring workflow:
 
@@ -75,10 +75,10 @@ The environment consisted of six infrastructure and endpoint systems and two wor
   - **SOC Analyst workstation** — Security monitoring and investigation
 - All components were deployed within a dedicated private network using the **192.168.126.0/24** address range.
 
-### 2. Elastic Stack Platform Evaluation
+### 2. Elastic Stack Platform Evaluation:
 Reviewed the main components of the **Elastic Stack** to understand how they work together to provide a centralized security monitoring and analysis platform.
 
-#### a. Elasticsearch
+#### a. Elasticsearch:
 - Evaluated **Elasticsearch** as the central system for storing, searching, and analyzing security data.
 - Security data can include:
   - Windows Event Logs
@@ -87,11 +87,11 @@ Reviewed the main components of the **Elastic Stack** to understand how they wor
   - Other security-related activity
 - Reviewed its search, analysis, and API capabilities for investigating security events.
 
-#### b. Logstash
+#### b. Logstash:
 - Reviewed **Logstash** as the data processing component.
 - It can collect information from different sources, clean and organize the data, and send it to Elasticsearch for analysis.
 
-#### c. Kibana
+#### c. Kibana:
 - Evaluated **Kibana** as the main interface used by security analysts.
 - It supports:
   - Investigating security events
@@ -101,10 +101,10 @@ Reviewed the main components of the **Elastic Stack** to understand how they wor
   - Monitoring alerts
   - Generating reports
 
-#### d. Telemetry Collection
+#### d. Telemetry Collection:
 - Reviewed the main methods used to collect security and system information.
 
-##### i. Beats
+##### i. Beats:
 - **Filebeat** — Collects log files
 - **Metricbeat** — Collects system performance information
 - **Packetbeat** — Collects network activity
@@ -112,11 +112,11 @@ Reviewed the main components of the **Elastic Stack** to understand how they wor
 - **Auditbeat** — Collects security and audit information
 - **Heartbeat** — Monitors system and service availability
 
-##### ii. Elastic Agent
+##### ii. Elastic Agent:
 - Reviewed **Elastic Agent** as a centralized solution for collecting endpoint security and system information.
 - Fleet can be used to centrally manage Elastic Agents across multiple endpoints.
 
-### Elastic vs. Traditional SIEM Architecture
+### Elastic vs. Traditional SIEM Architecture:
 
 | Elastic Stack | Equivalent SIEM Function |
 |---|---|
@@ -127,7 +127,7 @@ Reviewed the main components of the **Elastic Stack** to understand how they wor
 
 The evaluation demonstrated that the **Elastic Stack can provide a centralized platform for collecting, storing, searching, visualizing, and investigating security data**, while also supporting scalability and integration with a wide range of security technologies.
 
-### 3. Elasticsearch Deployment & Configuration
+### 3. Elasticsearch Deployment & Configuration:
 - Set up a dedicated Ubuntu Server to host Elasticsearch, the core component responsible for storing and processing security data.
 - Installed and configured Elasticsearch for secure operation.
 - Configured the server's network settings and enabled communication through the required port.
@@ -147,7 +147,7 @@ The evaluation demonstrated that the **Elastic Stack can provide a centralized p
 <img width="390" height="230" alt="image" src="https://github.com/user-attachments/assets/8c61cd07-1c0b-4298-9e83-5313daf6c124" />
 <img width="390" height="230" alt="image" src="https://github.com/user-attachments/assets/27e73605-a63f-4bfc-9b71-0dc1590e8a96" />
 
-### 4. Kibana Deployment & Elasticsearch Enrollment
+### 4. Kibana Deployment & Elasticsearch Enrollment:
 Installed **Kibana** on the Elastic server and connected it to **Elasticsearch** to provide a user-friendly interface for security monitoring and investigation.
 
 #### Configuration Performed:
@@ -176,7 +176,7 @@ systemctl status kibana.service
 <img width="390" height="230" alt="image" src="https://github.com/user-attachments/assets/6a403c3b-3e38-4e14-ab73-03ef19a0efd9" />
 <img width="785" height="230" alt="image" src="https://github.com/user-attachments/assets/1675b48d-9f96-44f8-baee-9ae025e48d80" />
 
-### 5. Kibana Security & Encryption Configuration
+### 5. Kibana Security & Encryption Configuration:
 Configured **Kibana's security settings** to protect sensitive information and ensure that encryption keys remain available after system restarts.
 
 #### Configuration Performed:
